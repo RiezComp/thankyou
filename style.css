@@ -1,13 +1,11 @@
 /* Global Styles */
 :root {
-    --primary-color: #D4AF37;
-    /* Gold */
+    --primary-color: #D4AF37; /* Gold */
     --bg-color: #121212;
     --card-bg: rgba(255, 255, 255, 0.05);
     --text-color: #f1f1f1;
     --font-heading: 'Great Vibes', cursive;
     --font-body: 'Lato', sans-serif;
-    --font-elegant: 'Cormorant Garamond', serif;
 }
 
 * {
@@ -20,8 +18,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-body);
-    overflow: hidden;
-    /* Locked initially for cover */
+    overflow: hidden; /* Locked initially for cover */
 }
 
 body.open {
@@ -29,29 +26,14 @@ body.open {
 }
 
 /* Typography */
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: var(--font-heading);
     color: var(--primary-color);
 }
 
-h1 {
-    font-size: 3.5rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    color: #fff;
-    letter-spacing: 2px;
-    font-family: var(--font-body);
-    text-transform: uppercase;
-}
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+h3 { font-size: 1.5rem; color: #fff; letter-spacing: 2px; font-family: var(--font-body); text-transform: uppercase; }
 
 p {
     line-height: 1.6;
@@ -59,9 +41,7 @@ p {
 }
 
 /* Utilities */
-.hidden {
-    display: none !important;
-}
+.hidden { display: none !important; }
 
 /* Cover Section */
 .cover-section {
@@ -138,9 +118,7 @@ p {
 }
 
 @keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
+    100% { transform: rotate(360deg); }
 }
 
 /* Hero Section */
@@ -152,17 +130,13 @@ p {
     align-items: center;
     text-align: center;
     background: url('assets/images/hero-bg.png') no-repeat center center/cover;
-    background-attachment: fixed;
-    /* Parallax effect */
+    background-attachment: fixed; /* Parallax effect */
 }
 
 .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(18, 18, 18, 0.3), var(--bg-color));
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(18,18,18,0.3), var(--bg-color));
 }
 
 .hero-text {
@@ -194,15 +168,8 @@ p {
 }
 
 @keyframes scrollInfo {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(15px);
-        opacity: 0;
-    }
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0; }
 }
 
 /* Sections */
@@ -226,8 +193,7 @@ p {
 }
 
 .divider.flipped {
-    transform: scaleX(-1);
-    /* Optional if unsymmetrical, but our image is symmetrical */
+    transform: scaleX(-1); /* Optional if unsymmetrical, but our image is symmetrical */
     transform: rotate(180deg);
 }
 
@@ -245,16 +211,8 @@ blockquote {
     padding: 40px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     margin: 20px 0;
-}
-
-.message-card p {
-    font-family: var(--font-elegant);
-    font-size: 1.3rem;
-    line-height: 1.8;
-    color: #fcefd0;
-    margin-bottom: 1.5rem;
 }
 
 .signature {
@@ -273,13 +231,12 @@ blockquote {
 }
 
 .gallery-item {
-    aspect-ratio: 1;
-    /* Square */
+    aspect-ratio: 1; /* Square */
     background: #333;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .placeholder-img {
@@ -297,7 +254,7 @@ footer {
     padding: 40px 20px;
     text-align: center;
     background: darken(var(--bg-color), 5%);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 footer .small {
@@ -308,16 +265,7 @@ footer .small {
 
 /* Responsive */
 @media (max-width: 600px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .message-card {
-        padding: 20px;
-    }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    .message-card { padding: 20px; }
 }
-
