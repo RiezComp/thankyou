@@ -173,7 +173,7 @@ p {
 
 .scroll-indicator {
     position: absolute;
-    bottom: 30px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
@@ -247,6 +247,14 @@ blockquote {
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     margin: 20px 0;
+}
+
+.message-card p {
+    font-family: var(--font-elegant);
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #fcefd0;
+    margin-bottom: 1.5rem;
 }
 
 .signature {
