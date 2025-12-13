@@ -173,7 +173,7 @@ p {
 
 .scroll-indicator {
     position: absolute;
-    bottom: 70px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
@@ -320,3 +320,4 @@ footer .small {
         padding: 20px;
     }
 }
+
