@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Glow</title>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading / Cover Screen -->
+    <div id="cover" class="cover-section">
+        <div class="cover-content" data-aos="fade-up">
+            <h3>Special Message For</h3>
+            <h1>Tina Rosita</h1>
+            <button id="open-invitation" class="btn-gold">Buka Pesan <i class="icon-mail"></i></button>
+        </div>
+    </div>
+
+    <!-- Floating Music Control -->
+    <div id="music-control" class="music-control hidden">
+        <button id="toggle-music" class="music-btn">
+            🎵
+        </button>
+    </div>
+
+    <!-- Main Content (Initially Hidden or Scrolled Past) -->
+    <main id="main-content" class="hidden-content">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-text" data-aos="zoom-in" data-aos-duration="1500">
+                <p class="greeting">Assalamu'alaikum Wr. Wb.</p>
+                <!-- <h2>Thank you for everything</h2> -->
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <!-- <section class="section quote-section">
+            <div class="container" data-aos="fade-up">
+                <img src="assets/images/decoration-flower.png" alt="Decoration" class="divider">
+                <blockquote>
+                    "Mencintaimu adalah anugerah terindah yang pernah kumiliki. Terima kasih telah menjadi bagian dari ceritaku."
+                </blockquote>
+                <img src="assets/images/decoration-flower.png" alt="Decoration" class="divider flipped">
+            </div>
+        </section> -->
+
+        <!-- Main Message Section -->
+        <section class="section message-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-down">Thank you for everything</h2>
+                <div class="message-card" data-aos="flip-left">
+                    <p>Hai Kamu,</p>
+                    <p>
+                        Mungkin kata-kata maaf saja tidak akan pernah cukup untuk mengembalikan semua keadaan. tapi intinya hanya ingin berterimakasih sudah ada atas segala waktunya.
+                        dari pertama kenal sampai kemarin pun kamu masih tetap baik kepada semua orang termasuk saya salah satunya, semua kebaikanmu tidak akan pernah lupa
+                        dan Insha Allah kebaikanmu akan melindungimu juga.
+                    </p>
+                    <p>
+                        Insha Allah tercapai semua keinginan Do'a dan harapannya. Sukses untuk apapun pekerjaan barunya, lebih aman dan nyaman, usahanya tambah lancar.  
+                        terakhir kalau saya pernah ada janji yang belum ditepati mohon maaf banget yaa..
+                    </p>
+                    <p class="signature">With,<br><strong>[Keluarga Surya Utama Putra]</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery / Moments Section -->
+        <!-- <section class="section gallery-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Our Moments</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="placeholder-img">Photo 1</div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="placeholder-img">Photo 2</div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="placeholder-img">Photo 3</div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Audio Element (Placeholder Source) -->
+    <audio id="bg-music" loop>
+        <!-- User needs to replace this with their actual music file -->
+        <source src="assets/music/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
